@@ -2,6 +2,41 @@
 {
     public class claseIVANNA
     {
-        
+        // sensores
+        public class sensores()
+        {
+
+            public bool detectarObjeto()
+            {
+                Console.WriteLine("Sensor: Se detecto Objeto...");
+                return true;
+            }
+
+            public bool Velocidad()
+            {
+                Console.WriteLine("Sensor: Calculando Velocidad...");
+                return true;
+            }
+
+            public void contador(int Objeto)
+            {
+                if (Objeto = caja)
+                {
+                    Console.WriteLine("Sensor: Contando Ojetos...");
+                }
+                else if(Objeto > caja)
+                {
+                    Console.WriteLine("Sensor: son demassiados objetos...");
+                }
+                else
+                {
+                    Console.WriteLine("Sensor: Faltan objetos...");
+                }
+               
+                
+            }
+        }
+
+       
     }
 }
