@@ -18,7 +18,7 @@
                 return true;
             }
 
-            public void contador(int Objeto)
+            public void contador(float Objeto)
             {
                 if (Objeto == 8)
                 {
