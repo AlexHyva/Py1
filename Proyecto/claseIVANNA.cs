@@ -20,11 +20,11 @@
 
             public void contador(int Objeto)
             {
-                if (Objeto = caja)
+                if (Objeto == 8)
                 {
                     Console.WriteLine("Sensor: Contando Ojetos...");
                 }
-                else if(Objeto > caja)
+                else if(Objeto > 0)
                 {
                     Console.WriteLine("Sensor: son demassiados objetos...");
                 }
