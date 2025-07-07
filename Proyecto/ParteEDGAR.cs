@@ -2,19 +2,15 @@
 {
     public class ParteEDGAR
     {
-        public float velsosidad;
+        public float velocidad;
         public void inicio()
         {
-            Console.WriteLine("Inicio del movimiento.");
+            Console.WriteLine("Hola jefe");
         }
         public void Mover1()
         {
-            velsosidad = 10.0f;
-            Console.WriteLine("La velocidad es: " + velsosidad);
+            Console.WriteLine("El programa comenzara pronto");
         }
-      
-        
-
 
     }
 }
