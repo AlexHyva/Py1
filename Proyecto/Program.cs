@@ -14,7 +14,7 @@ namespace Proyecto
             end = new ParteEDGAR();
             end.Mover1();
             end.inicio();
-            end.Detener();
+            
 
         }
     }
