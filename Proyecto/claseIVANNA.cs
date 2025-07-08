@@ -3,7 +3,7 @@
     public class claseIVANNA
     {
         // sensores
-        public class sensores()
+        public class Sensores()
         {
             public claseBUENO _claseBUENO;
            

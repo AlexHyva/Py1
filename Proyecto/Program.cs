@@ -16,7 +16,8 @@ namespace Proyecto
             ParteEDGAR.presentacion presentacion = new ParteEDGAR.presentacion();
             presentacion.inicio();
             presentacion.Mover1();
-
+           ParteEDGAR.ensendido ensendido = new ParteEDGAR.ensendido();
+            ensendido.ensender();
 
         }
         internal void punto2()
@@ -28,7 +29,7 @@ namespace Proyecto
         internal void prueba2()
         {
             sensor = new claseIVANNA();
-            claseIVANNA.sensores sensores = new claseIVANNA.sensores();
+            claseIVANNA.Sensores sensores = new claseIVANNA.Sensores();
             sensores.detectarObjeto();
             sensores.Velocidad();
             Console.WriteLine("en el almasen hay 5 objetos");

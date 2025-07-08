@@ -12,6 +12,14 @@
         {
             Console.WriteLine("El programa comenzara pronto");
         }
-    }
+        }
+        public class ensendido
+        {
+            public void ensender()
+            {
+                Console.WriteLine("La vanda se ha encendido");
+            }
+            
+        }
     }
 }
