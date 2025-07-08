@@ -16,6 +16,7 @@
             Console.WriteLine("Izquierda(1) o Derecha(0)");
             int direccion = int.Parse(Console.ReadLine());
             Console.WriteLine("Elije la cantidad de cajas");
+
             int caja = int.Parse(Console.ReadLine());
         }
 
