@@ -9,7 +9,7 @@ namespace Proyecto
     public class ivna
     {
         public claseIVANNA sensor;
-        public void prueba2()
+        internal void prueba2()
         {
             sensor = new claseIVANNA();
             claseIVANNA.sensores sensores = new claseIVANNA.sensores();
