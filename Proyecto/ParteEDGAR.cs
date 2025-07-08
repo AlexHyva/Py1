@@ -1,25 +1,16 @@
 ﻿namespace Proyecto
 {
-    public class ParteJairo
+    public class ParteEDGAR
     {
         public float velocidad;
         public void inicio()
         {
-            Console.WriteLine("Inicio del movimiento de la banda.");
+            Console.WriteLine("Hola jefe");
         }
         public void Mover1()
         {
-            velocidad = 10.0f;
-            Console.WriteLine("La banda esta en movimiento: " + velocidad);
+            Console.WriteLine("El programa comenzara pronto");
         }
-        public void Detener()
-        {
-            velocidad = 0.0f;
-            Console.WriteLine("La velocidad  esta disminullendo gradualmente.");
-            Console.WriteLine("Se a detenido por completo la banda");
-
-        }
-
 
     }
 }
