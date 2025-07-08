@@ -30,8 +30,12 @@ namespace Proyecto
             {
                 ed edgar = new ed();
                 edgar.prueba1();
+                
                 barraT barra = new barraT();
                 barra.prueba();
+
+                jairo pp3 = new jairo();
+                pp3.prueba3();
                 ivna ivanna = new ivna();
                 ivanna.prueba2();
             }
@@ -53,5 +57,15 @@ namespace Proyecto
             bueno.Mover();
         }
     }
-    
+    public class jairo
+    {
+        public ParteJairo inicializacion;
 
+        public void prueba3()
+        {
+            inicializacion = new ParteJairo();
+            inicializacion.Comenzar();
+        }
+    }
+
+}
