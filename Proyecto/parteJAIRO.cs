@@ -3,16 +3,16 @@
     public class ParteJairo
     {
         public float velocidadd;
-        public void inicio()
+        public void Comenzar()
         {
             Console.WriteLine("Inicio del movimiento de la banda.");
         }
-        public void Mover1()
+        public void Movimiento()
         {
             velocidadd = 10.0f;
             Console.WriteLine("La banda esta en movimiento: " + velocidadd);
         }
-        public void Detener()
+        public void Parar()
         {
             velocidadd = 0.0f;
             Console.WriteLine("La velocidad  esta disminullendo gradualmente.");
