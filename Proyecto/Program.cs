@@ -2,6 +2,19 @@
 
 namespace Proyecto
 {
+    public class ivna
+    {
+        public claseIVANNA sensor;
+        public void prueba2()
+        {
+            sensor = new claseIVANNA();
+            claseIVANNA.sensores sensores = new claseIVANNA.sensores();
+            sensores.detectarObjeto();
+            sensores.Velocidad();
+            Console.WriteLine("en el almasen hay 5 objetos");
+            sensores.contador(5);
+        }
+    }
     public class ed
     {
         /// <summary>
@@ -20,6 +33,8 @@ namespace Proyecto
 
                 jairo pp3 = new jairo();
                 pp3.prueba3();
+                ivna ivanna = new ivna();
+                ivanna.prueba2();
             }
         }
         public void prueba1()
