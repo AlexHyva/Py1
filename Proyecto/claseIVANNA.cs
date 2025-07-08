@@ -5,7 +5,8 @@
         // sensores
         public class sensores()
         {
-            private claseBUENO _claseBUENO;
+            public claseBUENO _claseBUENO;
+           
 
             public bool detectarObjeto()
             {

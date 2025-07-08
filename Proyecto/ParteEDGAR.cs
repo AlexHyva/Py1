@@ -2,6 +2,7 @@
 {
     public class ParteEDGAR
     {
+        public class presentacion { 
         public float velocidad;
         public void inicio()
         {
@@ -11,6 +12,6 @@
         {
             Console.WriteLine("El programa comenzara pronto");
         }
-
+    }
     }
 }
