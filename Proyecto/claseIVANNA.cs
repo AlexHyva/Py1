@@ -5,6 +5,7 @@
         // sensores
         public class sensores()
         {
+            private claseBUENO _claseBUENO;
 
             public bool detectarObjeto()
             {
@@ -20,11 +21,12 @@
 
             public void contador(float Objeto)
             {
-                if (Objeto == 8)
+                _claseBUENO = new claseBUENO();
+                if (Objeto == _claseBUENO.cajas)
                 {
                     Console.WriteLine("Sensor: Contando Ojetos...");
                 }
-                else if(Objeto > 0)
+                else if(Objeto > _claseBUENO.cajas)
                 {
                     Console.WriteLine("Sensor: son demassiados objetos...");
                 }
