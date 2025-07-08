@@ -8,7 +8,19 @@ namespace Proyecto
         ///muestra la clase ParteEDGAR que contiene métodos para mover, detener e iniciar un objeto.
         /// </summary>
         public ParteEDGAR end;
+        internal class Program
+        {
 
+
+            static void Main(string[] args)
+            {
+                ed edgar = new ed();
+                edgar.prueba1();
+                barraT barra = new barraT();
+                barra.prueba();
+                
+            }
+        }
         public void prueba1()
         {
             end = new ParteEDGAR();
@@ -27,16 +39,5 @@ namespace Proyecto
             bueno.Mover();
         }
     }
-    internal class Program
-    {
-        
-       
-        static void Main(string[] args)
-        {
-            barraT barra = new barraT();
-            barra.prueba();
-            ed edgar = new ed();
-            edgar.prueba1();
-        }
-    }
+    
 }
