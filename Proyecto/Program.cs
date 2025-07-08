@@ -8,6 +8,7 @@ namespace Proyecto
         ///muestra la clase ParteEDGAR que contiene métodos para mover, detener e iniciar un objeto.
         /// </summary>
         public ParteEDGAR end;
+        public claseIVANNA ivanna;
         internal class Program
         {
             static void Main(string[] args)
