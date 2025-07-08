@@ -1,24 +1,39 @@
-﻿using System.Runtime.CompilerServices;
+﻿using Proyecto;
+using System.Diagnostics.Contracts;
+using System.Runtime.CompilerServices;
+using static Proyecto.claseIVANNA;
 
 namespace Proyecto
 {
+
+    public class ivna
+    {
+        public claseIVANNA sensor;
+        public void prueba2()
+        {
+            sensor = new claseIVANNA();
+            claseIVANNA.sensores sensores = new claseIVANNA.sensores();
+            sensores.detectarObjeto();
+            sensores.Velocidad();
+            Console.WriteLine("en el almasen hay 5 objetos");
+            sensores.contador(5);
+        }
+    }
+    }
     public class ed
     {
-        /// <summary>
-        ///muestra la clase ParteEDGAR que contiene métodos para mover, detener e iniciar un objeto.
-        /// </summary>
         public ParteEDGAR end;
-        internal class Program
+        public claseIVANNA sensor;
+        public class Program
         {
-
-
             static void Main(string[] args)
             {
                 ed edgar = new ed();
                 edgar.prueba1();
                 barraT barra = new barraT();
                 barra.prueba();
-                
+                ivna ivanna = new ivna();
+                ivanna.prueba2();
             }
         }
         public void prueba1()
@@ -26,9 +41,8 @@ namespace Proyecto
             end = new ParteEDGAR();
             end.Mover1();
             end.inicio();
-            
-
         }
+
     }
     public class barraT
     {
@@ -40,4 +54,4 @@ namespace Proyecto
         }
     }
     
-}
+

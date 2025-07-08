@@ -26,7 +26,7 @@
                 {
                     Console.WriteLine("Sensor: Contando Ojetos...");
                 }
-                else if(Objeto > _claseBUENO.cajas)
+                else if(Objeto >= _claseBUENO.cajas)
                 {
                     Console.WriteLine("Sensor: son demassiados objetos...");
                 }
