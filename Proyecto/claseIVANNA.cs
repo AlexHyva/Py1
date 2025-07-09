@@ -3,9 +3,10 @@
     public class claseIVANNA
     {
         // sensores
-        public class sensores()
+        public class Sensores()
         {
-            private claseBUENO _claseBUENO;
+            public claseBUENO _claseBUENO;
+           
 
             public bool detectarObjeto()
             {

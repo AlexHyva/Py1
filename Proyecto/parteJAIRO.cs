@@ -2,6 +2,10 @@
 {
     public class ParteJairo
     {
+     public class comenzar1
+     {
+
+        
         public float velocidadd;
         public void Comenzar()
         {
@@ -12,8 +16,8 @@
             Console.WriteLine("La velocidad  esta disminullendo gradualmente.");
             Console.WriteLine("Se a detenido por completo la banda");
         }
-       
 
+     }
     }
 }
 
