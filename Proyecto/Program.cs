@@ -2,11 +2,13 @@
 using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using static Proyecto.claseIVANNA;
+using static Proyecto.ParteEDGAR;
 
 namespace Proyecto
 {
-    public class ed {
+    public class entes {
         public ParteEDGAR end;
+        public ErenciaEd end1;
         public claseBUENO bueno;
         public ParteJairo jairo;
         public claseIVANNA sensor;
@@ -32,9 +34,15 @@ namespace Proyecto
             claseIVANNA.Sensores sensores = new claseIVANNA.Sensores();
             sensores.detectarObjeto();
             sensores.Velocidad();
-            Console.WriteLine("en el almasen hay 5 objetos");
+            Console.WriteLine("en el almasen hay 5 objetos\n");
             sensores.contador(5);
         }
+        public void punto4()
+        {
+            ParteEDGAR.ErenciaEd problema = new ParteEDGAR.ErenciaEd();
+            problema.sobrecarga();
+        }
+
         public void punto3()
         {
             jairo = new ParteJairo();

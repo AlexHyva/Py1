@@ -3,7 +3,13 @@
     public class ParteEDGAR
     {
         public class presentacion { 
-        public float velocidad;
+        
+            public presentacion()
+            {
+                this.inicio();
+                this.Mover1();
+            }
+
         public void inicio()
         {
             Console.WriteLine("Hola jefe");
@@ -21,5 +27,14 @@
             }
             
         }
+        public class ErenciaEd : presentacion
+        {
+            public void sobrecarga()
+            {
+                base.inicio();
+                Console.WriteLine("\n!emergancia se sobrecarga\n");
+            }
+        }
+
     }
 }
