@@ -1,68 +1,66 @@
-﻿using System.Runtime.CompilerServices;
+﻿using Proyecto;
+using System;
 
 namespace Proyecto
 {
-    public class ivna
+    public class Program
     {
-        public claseIVANNA sensor;
-        public void prueba2()
+        public class Entes
         {
-            sensor = new claseIVANNA();
-            claseIVANNA.sensores sensores = new claseIVANNA.sensores();
-            sensores.detectarObjeto();
-            sensores.Velocidad();
-            Console.WriteLine("en el almasen hay 5 objetos");
-            sensores.contador(5);
-        }
-    }
-    public class ed
-    {
-        /// <summary>
-        ///muestra la clase ParteEDGAR que contiene métodos para mover, detener e iniciar un objeto.
-        /// </summary>
-        public ParteEDGAR end;
-        public claseIVANNA ivanna;
-        internal class Program
-        {
-            static void Main(string[] args)
-            {
-                ed edgar = new ed();
-                edgar.prueba1();
-                
-                barraT barra = new barraT();
-                barra.prueba();
+            public ParteEDGAR end = new ParteEDGAR();
+            public claseBUENO bueno = new claseBUENO();
+            public parteJairo jairo = new parteJairo();
+            public claseIVANNA sensor = new claseIVANNA();
 
-                jairo pp3 = new jairo();
-                pp3.prueba3();
-                ivna ivanna = new ivna();
-                ivanna.prueba2();
+            public void punto1()
+            {
+                ParteEDGAR.presentacion presentacion = new ParteEDGAR.presentacion();
+                ParteEDGAR.ensendido encender = new ParteEDGAR.ensendido();
+                encender.ensender();
+            }
+
+            public void punto2()
+            {
+                claseBUENO.Mover mover = new claseBUENO.Mover();
+                mover.Mover1();
+            }
+
+            public void prueba2()
+            {
+                claseIVANNA.Sensores sensores = new claseIVANNA.Sensores();
+                sensores.detectarObjeto();
+                sensores.Velocidad();
+                Console.WriteLine("En el almacén hay 5 objetos\n");
+                sensores.contador(5);
+            }
+
+            public void punto3()
+            {
+                ParteEDGAR.ErenciaEd emergencia = new ParteEDGAR.ErenciaEd();
+                emergencia.sobrecarga();
+            }
+
+            public void punto4()
+            {
+                parteJairo.comenzar1 comenzar = new parteJairo.comenzar1();
+                comenzar.Comenzar();
             }
         }
-        public void prueba1()
+        static void Main(string[] args)
         {
-            end = new ParteEDGAR();
-            end.Mover1();
-            end.inicio();
+            Entes sistema = new Entes();
+
+            Console.WriteLine("\n=== INICIO DEL SISTEMA ===\n");
+
+            sistema.punto1();   // Presentación y encendido
+            sistema.punto2();   // Movimiento de cajas
+            sistema.prueba2();  // Sensores
+            sistema.punto3();   // Emergencia
+            sistema.punto4();   // Movimiento de banda
+
+            Console.WriteLine("\n=== FIN DEL PROGRAMA ===");
         }
     }
-    public class barraT
-    {
-        public claseBUENO bueno;
+   
+} 
 
-        public void prueba() {             
-            bueno = new claseBUENO();
-            bueno.Mover();
-        }
-    }
-    public class jairo
-    {
-        public ParteJairo inicializacion;
-
-        public void prueba3()
-        {
-            inicializacion = new ParteJairo();
-            inicializacion.Comenzar();
-        }
-    }
-
-}

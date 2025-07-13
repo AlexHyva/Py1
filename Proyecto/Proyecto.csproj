@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\edgar\OneDrive\Escritorio\Blotoarer\solo visual\Program.cs" Link="Program.cs" />
+    <Compile Include="C:\Users\edgar\OneDrive\Escritorio\Blotoarer\solo visual\Program.txt" Link="Program.txt" />
+  </ItemGroup>
+
 </Project>
