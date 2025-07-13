@@ -5,7 +5,7 @@ namespace Proyecto
 {
     public class Program
     {
-        public class entes
+        public class Entes
         {
             public ParteEDGAR end = new ParteEDGAR();
             public claseBUENO bueno = new claseBUENO();
@@ -48,7 +48,7 @@ namespace Proyecto
         }
         static void Main(string[] args)
         {
-            entes sistema = new entes();
+            Entes sistema = new Entes();
 
             Console.WriteLine("\n=== INICIO DEL SISTEMA ===\n");
 
