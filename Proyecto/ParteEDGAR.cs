@@ -2,39 +2,38 @@
 {
     public class ParteEDGAR
     {
-        public class presentacion { 
-        
+        public class presentacion
+        {
             public presentacion()
             {
-                this.inicio();
-                this.Mover1();
+                inicio();
+                Mover1();
             }
 
-        public void inicio()
-        {
-            Console.WriteLine("Hola jefe");
+            public void inicio()
+            {
+                Console.WriteLine("Hola jefe");
+            }
+            public void Mover1()
+            {
+                Console.WriteLine("El programa comenzará pronto");
+            }
         }
-        public void Mover1()
-        {
-            Console.WriteLine("El programa comenzara pronto");
-        }
-        }
+
         public class ensendido
         {
             public void ensender()
             {
-                Console.WriteLine("La vanda se ha encendido");
-            }
-            
-        }
-        public class ErenciaEd : presentacion
-        {
-            public void sobrecarga()
-            {
-                base.inicio();
-                Console.WriteLine("\n!emergancia se sobrecarga\n");
+                Console.WriteLine("La banda se ha encendido");
             }
         }
 
+        public class ErenciaEd : ParteEDGAR
+        {
+            public void sobrecarga()
+            {
+                Console.WriteLine("\n⚠ Emergencia detectada: sobrecarga. El sistema se detiene.\n");
+            }
+        }
     }
 }

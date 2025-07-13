@@ -2,44 +2,39 @@
 {
     public class claseIVANNA
     {
-        // sensores
-        public class Sensores()
+        public class Sensores
         {
-            public claseBUENO _claseBUENO;
-           
+            private claseBUENO _claseBUENO = new claseBUENO();
 
             public bool detectarObjeto()
             {
-                Console.WriteLine("Sensor: Se detecto Objeto...");
+                Console.WriteLine("Sensor: Se detectó objeto...");
                 return true;
             }
 
             public bool Velocidad()
             {
-                Console.WriteLine("Sensor: Calculando Velocidad...");
+                Console.WriteLine("Sensor: Calculando velocidad...");
                 return true;
             }
 
-            public void contador(float Objeto)
+            public void contador(float objetosDetectados)
             {
-                _claseBUENO = new claseBUENO();
-                if (Objeto == _claseBUENO.cajas)
+                float cajasActuales = _claseBUENO.cajas;
+
+                if (objetosDetectados == cajasActuales)
                 {
-                    Console.WriteLine("Sensor: Contando Ojetos...");
+                    Console.WriteLine("Sensor: Cantidad correcta de objetos.");
                 }
-                else if(Objeto > _claseBUENO.cajas)
+                else if (objetosDetectados > cajasActuales)
                 {
-                    Console.WriteLine("Sensor: son demassiados objetos...");
+                    Console.WriteLine("Sensor: Hay demasiados objetos.");
                 }
                 else
                 {
-                    Console.WriteLine("Sensor: Faltan objetos...");
+                    Console.WriteLine("Sensor: Faltan objetos.");
                 }
-               
-                
             }
         }
-
-       
     }
 }

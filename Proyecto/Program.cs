@@ -1,54 +1,66 @@
 ﻿using Proyecto;
-using System.Diagnostics.Contracts;
-using System.Runtime.CompilerServices;
-using static Proyecto.claseIVANNA;
-using static Proyecto.ParteEDGAR;
+using System;
 
 namespace Proyecto
 {
-    public class entes {
-        public ParteEDGAR end;
-        public ErenciaEd end1;
-        public claseBUENO bueno;
-        public ParteJairo jairo;
-        public claseIVANNA sensor;
-        internal void punto1()
+    public class Program
+    {
+        public class entes
         {
-            end = new ParteEDGAR();
-            ParteEDGAR.presentacion presentacion = new ParteEDGAR.presentacion();
-            presentacion.inicio();
-            presentacion.Mover1();
-           ParteEDGAR.ensendido ensendido = new ParteEDGAR.ensendido();
-            ensendido.ensender();
+            public ParteEDGAR end = new ParteEDGAR();
+            public claseBUENO bueno = new claseBUENO();
+            public parteJairo jairo = new parteJairo();
+            public claseIVANNA sensor = new claseIVANNA();
 
-        }
-        internal void punto2()
-        {
-            bueno = new claseBUENO();
-            claseBUENO.Mover mover = new claseBUENO.Mover();
-            mover.Mover1();
-        }
-        internal void prueba2()
-        {
-            sensor = new claseIVANNA();
-            claseIVANNA.Sensores sensores = new claseIVANNA.Sensores();
-            sensores.detectarObjeto();
-            sensores.Velocidad();
-            Console.WriteLine("en el almasen hay 5 objetos\n");
-            sensores.contador(5);
-        }
-        public void punto4()
-        {
-            ParteEDGAR.ErenciaEd problema = new ParteEDGAR.ErenciaEd();
-            problema.sobrecarga();
-        }
+            public void punto1()
+            {
+                ParteEDGAR.presentacion presentacion = new ParteEDGAR.presentacion();
+                ParteEDGAR.ensendido encender = new ParteEDGAR.ensendido();
+                encender.ensender();
+            }
 
-        public void punto3()
-        {
-            jairo = new ParteJairo();
-            ParteJairo.comenzar1 comenzar = new ParteJairo.comenzar1();
-            comenzar.Comenzar();
-        }
+            public void punto2()
+            {
+                claseBUENO.Mover mover = new claseBUENO.Mover();
+                mover.Mover1();
+            }
 
+            public void prueba2()
+            {
+                claseIVANNA.Sensores sensores = new claseIVANNA.Sensores();
+                sensores.detectarObjeto();
+                sensores.Velocidad();
+                Console.WriteLine("En el almacén hay 5 objetos\n");
+                sensores.contador(5);
+            }
+
+            public void punto3()
+            {
+                ParteEDGAR.ErenciaEd emergencia = new ParteEDGAR.ErenciaEd();
+                emergencia.sobrecarga();
+            }
+
+            public void punto4()
+            {
+                parteJairo.comenzar1 comenzar = new parteJairo.comenzar1();
+                comenzar.Comenzar();
+            }
+        }
+        static void Main(string[] args)
+        {
+            entes sistema = new entes();
+
+            Console.WriteLine("\n=== INICIO DEL SISTEMA ===\n");
+
+            sistema.punto1();   // Presentación y encendido
+            sistema.punto2();   // Movimiento de cajas
+            sistema.prueba2();  // Sensores
+            sistema.punto3();   // Emergencia
+            sistema.punto4();   // Movimiento de banda
+
+            Console.WriteLine("\n=== FIN DEL PROGRAMA ===");
+        }
     }
-}
+   
+} 
+
