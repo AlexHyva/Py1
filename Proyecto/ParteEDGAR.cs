@@ -1,4 +1,4 @@
-namespace Proyecto
+﻿namespace Proyecto
 {
     public class ParteEDGAR
     {
@@ -12,6 +12,20 @@ namespace Proyecto
             Console.WriteLine("El programa comenzara pronto");
         }
 
+        public class ensendido
+        {
+            public void ensender()
+            {
+                Console.WriteLine("La banda se ha encendido");
+            }
+        }
+
+        public class ErenciaEd : ParteEDGAR
+        {
+            public void sobrecarga()
+            {
+                Console.WriteLine("\n⚠ Emergencia detectada: sobrecarga. El sistema se detiene.\n");
+            }
+        }
     }
 }
-
